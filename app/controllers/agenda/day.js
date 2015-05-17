@@ -8,8 +8,8 @@ var listAppointments = [
 		author : "Giuseppe Pellegrino",
 		hourStart : 8,
 		minuteStart : 15,
-		hourStart : 9,
-		minuteStart : 30
+		hourEnd : 9,
+		minuteEnd : 30
 	},
 	{
 		id : 2,
@@ -18,8 +18,8 @@ var listAppointments = [
 		author : "Giuseppe Pellegrino",
 		hourStart : 8,
 		minuteStart : 30,
-		hourStart : 10,
-		minuteStart : 30
+		hourEnd : 10,
+		minuteEnd : 30
 	},
 	{
 		id : 3,
@@ -28,8 +28,8 @@ var listAppointments = [
 		author : "Giuseppe Pellegrino",
 		hourStart : 12,
 		minuteStart : 45,
-		hourStart : 13,
-		minuteStart : 30
+		hourEnd : 13,
+		minuteEnd : 30
 	},
 	{
 		id : 4,
@@ -38,8 +38,8 @@ var listAppointments = [
 		author : "Giuseppe Pellegrino",
 		hourStart : 14,
 		minuteStart : 0,
-		hourStart : 17,
-		minuteStart : 30
+		hourEnd : 17,
+		minuteEnd : 30
 	},
 	{
 		id : 6,
@@ -48,8 +48,8 @@ var listAppointments = [
 		author : "Giuseppe Pellegrino",
 		hourStart : 18,
 		minuteStart : 0,
-		hourStart : 19,
-		minuteStart : 30
+		hourEnd : 19,
+		minuteEnd : 30
 	}	
 ];
 
