@@ -15,6 +15,12 @@
 </tr>
 </table>
 
-<h3>How to use widget</h3>
+<h4>How to use this widget</h4>
 
-<h3>.. in a controller</h3>
+<h4>.. in a controller</h4>
+
+<h3>Next steps ... </h3>
+<h4>	1. Managing 'onClick' event on appointment</h4>
+<h5>	2. Managing 'onScroll' date event on day widget</h4>
+	
+	
