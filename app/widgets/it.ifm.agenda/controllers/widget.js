@@ -70,9 +70,6 @@ function format(i){
 };
 
 
-// var Appointment = require('appointments');
-
-
 function setup(){
 	$.agenda.removeAllChildren();
 	
@@ -220,7 +217,6 @@ function adaptAppointmentsWidth(){
 		for(col = app.referencedColumn; col < TOTAL_COLUMNS; col++){
 			var array_col = listColumns[col];
 			for(app_col = 0; app_col < array_col.length; app_col++){
-//				if(col  === app_col) continue;
 				if(app.inCollision(array_col[app_col])){
 					b = true;
 					break;
