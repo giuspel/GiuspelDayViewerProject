@@ -12,6 +12,11 @@ var Appointment = function(id, description, author, group, priority, date_start,
 	this.dateStart = date_start;
 	this.dateEnd = date_end;
 	
+	this.hourStart = 0;
+	this.hourEnd = 0;
+	this.minuteStart = 0;
+	this.minuteEnd = 0;
+	
 	this.idStart = 0;
 	this.idEnd = 0;
 	
@@ -60,9 +65,19 @@ function dip(pixel){
 	return dp;	
 }
 
-function getIdFromDate(date){
-	return 10;
-};
+function convertTimeToTop(h, m){
+	if(+h <= 0 && +h >= 24)
+		throw new Error("Ora non valida [ammesso un valore da 0 a 23]");
+		
+	if(+m !== 0 && +m !== 15 +m !== 30 +m !== 45)
+		throw new Error("Minuti non validi [ammesso un valore tra {0, 15, 30, 45} ]");	
+	
+	var x = +h * 60 / SPACE_TIME;
+	var y = (m % SPACE_TIME);
+	
+	return x + y;
+
+}
 
 function format(i){
 	if(i < 10) return "0"+i;
@@ -166,7 +181,8 @@ function createAppointmentView(last, app){
 		x = 0;
 	 	
 	var w  = (max_width -60 - 10) ;
-	
+	app.idStart = convertTimeToTop(app.hourStart, app.minuteStart);
+	app.idEnd = convertTimeToTop(app.hourEnd, app.minuteEnd);
 	var t = LINE_HEIGHT *  app.idStart;
 	var l = (x * w) + 60;
 	var h = LINE_HEIGHT * (app.idEnd - app.idStart);

@@ -3,52 +3,54 @@ var args = arguments[0] || {};
 var listAppointments = [
 	{
 		id : 1,
-		description : "Appuntamento 01",
+		description : "Appuntamento dal dentista",
 		group : 4,
 		author : "Giuseppe Pellegrino",
-		idStart : 1,
-		idEnd : 4
+		hourStart : 8,
+		minuteStart : 15,
+		hourStart : 9,
+		minuteStart : 30
 	},
 	{
 		id : 2,
-		description : "Appuntamento 01",
+		description : "Giornalaio",
 		group : 4,
 		author : "Giuseppe Pellegrino",
-		idStart : 3,
-		idEnd : 12
+		hourStart : 8,
+		minuteStart : 30,
+		hourStart : 10,
+		minuteStart : 30
 	},
 	{
 		id : 3,
-		description : "Appuntamento 1",
-		group : 2,
+		description : "Pranzo fuori ...",
+		group : 1,
 		author : "Giuseppe Pellegrino",
-		idStart : 10,
-		idEnd : 15
+		hourStart : 12,
+		minuteStart : 45,
+		hourStart : 13,
+		minuteStart : 30
 	},
 	{
 		id : 4,
-		description : "Appuntamento 3",
-		group : 1,
+		description : "Lavoro",
+		group : 2,
 		author : "Giuseppe Pellegrino",
-		idStart : 24,
-		idEnd : 34
-	},
-	{
-		id : 5,
-		description : "Appuntamento x",
-		group : 0,
-		author : "Giuseppe Pellegrino",
-		idStart : 24,
-		idEnd : 27
+		hourStart : 14,
+		minuteStart : 0,
+		hourStart : 17,
+		minuteStart : 30
 	},
 	{
 		id : 6,
-		description : "Appuntamento 5",
-		group : 4,
+		description : "Spesa",
+		group : 0,
 		author : "Giuseppe Pellegrino",
-		idStart : 30,
-		idEnd : 36
-	}
+		hourStart : 18,
+		minuteStart : 0,
+		hourStart : 19,
+		minuteStart : 30
+	}	
 ];
 
 $.agendaday.paintListOfAppointments(listAppointments);
