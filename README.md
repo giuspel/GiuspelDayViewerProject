@@ -15,6 +15,6 @@
 </tr>
 </table>
 
-<h1>How to use widget</h1>
+<h3>How to use widget</h3>
 
-<h1>.. in a controller</h1>
+<h3>.. in a controller</h3>
