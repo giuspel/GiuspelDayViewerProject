@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="root">
+		<Label top="0" height="40" left="0" right="0" class="textDay" id="giorno" >30 Maggio, 2015</Label>	
+		<ScrollView id="agenda" top="40" bottom="0" backgroundColor="white" height="Ti.UI.FILL"></ScrollView>
+	</View>	
+</Alloy>

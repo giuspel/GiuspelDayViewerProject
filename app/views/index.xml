@@ -1,0 +1,7 @@
+<Alloy>
+		<Window class="container"  title="Agenda">
+		      <View backgroundColor="white" title="Agenda">
+		      		<Require src="agenda/day"/>
+		      </View>
+		</Window>
+</Alloy>

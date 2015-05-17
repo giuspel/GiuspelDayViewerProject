@@ -1,0 +1,22 @@
+
+".container" : {
+  
+}
+
+".disc" : {
+	color : "red",
+	font: {
+		fontSize : 14,
+		fontWeight : "bold",
+		fontColor : "red"
+	}
+}
+
+".auth" : {
+	color : "navy",
+	font: {
+		fontSize : 10,
+		fontWeight : "normal",
+		fontColor : "navy"
+	}
+}

@@ -1,0 +1,9 @@
+".textDay" : {
+	font : {
+		fontWeight : 'bold',
+		fontFamily : 'Montserrat-Regular',
+		fontSize : 18
+	},
+	backgroundColor : 'navy',
+	color : 'white'
+}
