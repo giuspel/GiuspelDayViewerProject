@@ -21,6 +21,6 @@
 
 <h3>Next steps ... </h3>
 <h4>	1. Managing 'onClick' event on appointment</h4>
-<h5>	2. Managing 'onScroll' date event on day widget</h4>
+<h4>	2. Managing 'onScroll' date event on day widget</h4>
 	
 	
