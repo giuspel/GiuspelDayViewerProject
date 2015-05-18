@@ -73,7 +73,9 @@ function convertTimeToTop(h, m){
 		throw new Error("Minuti non validi [ammesso un valore tra {0, 15, 30, 45} ]");	
 	
 	var x = +h * 60 / SPACE_TIME;
-	var y = (m % SPACE_TIME);
+	var y = (+m / SPACE_TIME);
+	
+	Ti.API.error("X="+x+", Y="+y);
 	
 	return x + y;
 
