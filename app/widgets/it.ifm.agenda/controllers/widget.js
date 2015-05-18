@@ -69,7 +69,7 @@ function convertTimeToTop(h, m){
 	if(+h <= 0 && +h >= 24)
 		throw new Error("Ora non valida [ammesso un valore da 0 a 23]");
 		
-	if(+m !== 0 && +m !== 15 +m !== 30 +m !== 45)
+	if(+m !== 0 && +m !== 15 && +m !== 30 && +m !== 45)
 		throw new Error("Minuti non validi [ammesso un valore tra {0, 15, 30, 45} ]");	
 	
 	var x = +h * 60 / SPACE_TIME;
@@ -308,10 +308,19 @@ function transform(x){
 	var app = new Appointment();
 	app.id = x.id;
 	app.description = x.description;
-	app.idStart = x.idStart;
-	app.idEnd = x.idEnd;
+
+	app.hourStart = x.hourStart;
+	app.hourEnd = x.hourEnd;
+	app.minuteStart = x.minuteStart;
+	app.minuteEnd = x.minuteEnd;
+
+	app.idStart = convertTimeToTop(app.hourStart, app.minuteStart);
+	app.idEnd = convertTimeToTop(app.hourEnd, app.minuteEnd);
 	app.author = x.author;
 	app.group = x.group;
+	
+	Ti.API.error("idStart = "+app.idStart+" , idEnd = "+app.idEnd);
+	
 	return app;	
 }
 
